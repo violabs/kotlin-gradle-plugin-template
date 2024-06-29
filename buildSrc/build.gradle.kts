@@ -70,7 +70,7 @@ if (publishingUrl.isNotBlank()) {
                 url = uri(publishingUrl)
                 credentials {
                     username = project.findProperty(secretFileUsernameKey) as String? ?: System.getenv(envUsernameKey)
-                    password = project.findProperty(secretFileUsernamePassword) as String? ?: System.getenv(envPasswordKey)
+                    password = project.findProperty(secretFilePasswordKey) as String? ?: System.getenv(envPasswordKey)
                 }
             }
         }
