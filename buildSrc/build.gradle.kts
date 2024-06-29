@@ -17,7 +17,7 @@ plugins {
     java
 }
 
-group = "" // update
+group = "io.violabs.neo.kortex" // update
 version = "1.0.0"
 
 repositories {
@@ -28,7 +28,7 @@ dependencies {
     implementation("org.yaml:snakeyaml:2.0")
     implementation(gradleApi())
 
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.3")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:5.10.2")
     testImplementation("io.violabs.geordi:unit-sim:1.0.6")
 }
@@ -77,8 +77,8 @@ if (publishingUrl.isNotBlank()) {
         publications {
             create<MavenPublication>(publicationName) {
                 from(components["java"])
-                groupId = "" // update to group id
-                artifactId = "" // update to artifact id
+                groupId = "io.violabs.neo.kortex" // update to group id
+                artifactId = "plugins-" // update to artifact id
                 version = project.version.toString()
             }
         }
