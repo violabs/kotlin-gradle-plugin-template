@@ -59,7 +59,7 @@ if (publishingUrl.isNotBlank()) {
     publishing {
         val publicationRepoName: String by project.ext
         val secretFileUsernameKey: String by project.ext
-        val secretFileUsernamePassword: String by project.ext
+        val secretFilePasswordKey: String by project.ext
         val envUsernameKey: String by project.ext
         val envPasswordKey: String by project.ext
         val publicationName: String by project.ext
